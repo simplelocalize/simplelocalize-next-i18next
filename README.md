@@ -59,20 +59,12 @@ module.exports = nextConfig
 
 ## SimpleLocalize configuration
 
-💿 Install SimpleLocalize CLI
+💿 Install [SimpleLocalize CLI](https://simplelocalize.io/docs/cli/get-started/)
 ```bash
 curl -s https://get.simplelocalize.io/2.0/install | bash
 ```
 
-⤵️ Download translations to `./public/locales` directory
-```bash
-simplelocalize download
-```
-
-⤴️ Upload translations from `./public/locales` directory
-```bash
-simplelocalize upload
-```
+🧷 Create configuration file
 
 ```shell
 # 📦 file: ./simplelocalize.yml
@@ -84,9 +76,18 @@ uploadFormat: single-language-json
 uploadPath: ./public/locales/{lang}/{ns}.json
 ```
 
+⤵️ [Download translations](https://simplelocalize.io/docs/cli/download-translations/) to `./public/locales` directory
+```bash
+simplelocalize download
+```
+
+⤴️ [Upload translations](https://simplelocalize.io/docs/cli/upload-translations/) from `./public/locales` directory
+```bash
+simplelocalize upload
+```
+
 > You can [automate process of adding translation keys](https://simplelocalize.io/docs/integrations/i18next/) from project to SimpleLocalize.
 
-Learn more about [SimpleLocalize CLI](https://simplelocalize.io/docs/cli/get-started/)
 
 ## Usage
 
