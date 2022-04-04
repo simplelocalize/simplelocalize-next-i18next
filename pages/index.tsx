@@ -13,7 +13,12 @@ export async function getStaticProps({locale}) {
 }
 
 const Home: NextPage = () => {
-  const {t} = useTranslation();
+  //translations from common.json
+  const {t} = useTranslation('common');
+
+  //translations from home.json
+  const {t: homeT} = useTranslation('home');
+
   const changeLanguage = (language: string) => {
     window.location.replace("/" + language)
   }
@@ -22,6 +27,7 @@ const Home: NextPage = () => {
     <div className="App">
       <header className="App-header">
         <div>
+          <h2>{homeT("HELLO_WORLD")}</h2>
           <h1>SimpleLocalize.io ⚡️ next-i18next</h1>
           <p>
             {t("USE_BUTTONS_BELOW")}

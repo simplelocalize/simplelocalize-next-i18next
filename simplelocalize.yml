@@ -1,7 +1,11 @@
 # Installation: 'curl -s https://get.simplelocalize.io/install | bash'
-# Usage: 'simplelocalize download'
+# Usage: 'simplelocalize download' to download translations
+# Usage: 'simplelocalize upload' to upload translations
 # Docs: https://simplelocalize.io/docs/cli/get-started/
 
 apiKey: YOUR_PROJECT_API_KEY
 downloadFormat: single-language-json
-downloadPath: ./public/locales/{lang}/common.json
+downloadPath: ./public/locales/{lang}/{ns}.json
+
+uploadFormat: single-language-json
+uploadPath: ./public/locales/{lang}/{ns}.json
