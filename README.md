@@ -11,6 +11,23 @@ Translations are placed in `/public/locales/{lang}/{ns}.json`
 
 In this example there are two namespaces: `common` and `home` and 4 locales: `en`, `es`, `fr_FR`, `pl`.
 
+
+```bash
+.
+├── en
+│   ├── common.json
+│   └── home.json
+├── es
+│   ├── common.json
+│   └── home.json
+├── pl
+│   ├── common.json
+│   └── home.json
+└── fr_FR
+    ├── common.json
+    └── home.json
+```
+
 ## i18next configuration
 
 ```bash
