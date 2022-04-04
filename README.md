@@ -59,6 +59,11 @@ module.exports = nextConfig
 
 ## SimpleLocalize configuration
 
+Install SimpleLocalize CLI
+```bash
+curl -s https://get.simplelocalize.io/2.0/install | bash
+```
+
 Download translations to `./public/locales` directory
 ```bash
 simplelocalize download
@@ -80,6 +85,8 @@ uploadPath: ./public/locales/{lang}/{ns}.json
 ```
 
 > You can [automate process of adding translation keys](https://simplelocalize.io/docs/integrations/i18next/) from project to SimpleLocalize.
+
+Learn more about [SimpleLocalize CLI](https://simplelocalize.io/docs/cli/get-started/)
 
 ## Usage
 
