@@ -66,7 +66,7 @@ curl -s https://get.simplelocalize.io/2.0/install | bash
 
 🧷 Create configuration file
 
-```shell
+```yaml
 # 📦 file: ./simplelocalize.yml
 apiKey: YOUR_PROJECT_API_KEY
 downloadFormat: single-language-json
