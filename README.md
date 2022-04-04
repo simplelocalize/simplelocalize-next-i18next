@@ -30,9 +30,13 @@ In this example there are two namespaces: `common` and `home` and 4 locales: `en
 
 ## i18next configuration
 
+Install i18next for NextJS
+
 ```bash
 npm install --save next-i18next
 ```
+
+Create a configuration file in project root.
 
 ```typescript
 // 📦 file: ./next-i18next.config.js
@@ -45,6 +49,8 @@ module.exports = {
 ```
 
 ## NextJS + i18n configuration
+
+Import i18next configuration file into `next.config.js`
 
 ```typescript
 // 📦 file: ./next.config.js
@@ -102,6 +108,9 @@ console.log(t('LEARN_MORE')) // output: Learn more
 const {t: homeT} = useTranslation('home');
 console.log(homeT('HELLO_WORLD')) // output: Hello world
 ```
+
+
+
 
 ## Try out this demo
 
