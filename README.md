@@ -18,6 +18,7 @@ npm install --save next-i18next
 ```
 
 ```typescript
+// 📦 file: ./next-i18next.config.js
 module.exports = {
   i18n: {
     defaultLocale: 'en',
@@ -29,6 +30,7 @@ module.exports = {
 ## NextJS + i18n configuration
 
 ```typescript
+// 📦 file: ./next.config.js
 const {i18n} = require("./next-i18next.config");
 const nextConfig = {
   reactStrictMode: true,
@@ -50,9 +52,8 @@ Upload translations from `./public/locales` directory
 simplelocalize upload
 ```
 
-`./simplelocalize.yml` configuration file
-
 ```shell
+# 📦 file: ./simplelocalize.yml
 apiKey: YOUR_PROJECT_API_KEY
 downloadFormat: single-language-json
 downloadPath: ./public/locales/{lang}/{ns}.json
