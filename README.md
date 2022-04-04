@@ -59,17 +59,17 @@ module.exports = nextConfig
 
 ## SimpleLocalize configuration
 
-Install SimpleLocalize CLI
+💿 Install SimpleLocalize CLI
 ```bash
 curl -s https://get.simplelocalize.io/2.0/install | bash
 ```
 
-Download translations to `./public/locales` directory
+⤵️ Download translations to `./public/locales` directory
 ```bash
 simplelocalize download
 ```
 
-Upload translations from `./public/locales` directory
+⤴️ Upload translations from `./public/locales` directory
 ```bash
 simplelocalize upload
 ```
