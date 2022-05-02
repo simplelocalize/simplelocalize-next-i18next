@@ -2,6 +2,7 @@ import type {NextPage} from 'next'
 import {useTranslation} from "next-i18next";
 
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations';
+import Link from "next/link";
 
 export async function getStaticProps({locale}) {
   return {
@@ -32,10 +33,19 @@ const Home: NextPage = () => {
           <p>
             {t("USE_BUTTONS_BELOW")}
           </p>
-          <button onClick={() => changeLanguage("en")}>English</button>
-          <button onClick={() => changeLanguage("es")}>Spanish</button>
-          <button onClick={() => changeLanguage("fr_FR")}>French</button>
-          <button onClick={() => changeLanguage("pl")}>Polish</button>
+          <div>
+            <button onClick={() => changeLanguage("en")}>English</button>
+            <button onClick={() => changeLanguage("es")}>Spanish</button>
+            <button onClick={() => changeLanguage("fr_FR")}>French</button>
+            <button onClick={() => changeLanguage("pl")}>Polish</button>
+          </div>
+          <div>
+            <Link href="/about">
+              <a className="App-link">
+                {t("GO_TO_ABOUT_US")}
+              </a>
+            </Link>
+          </div>
           <hr/>
         </div>
 

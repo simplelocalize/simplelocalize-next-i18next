@@ -1,6 +1,8 @@
 {
+  "BACK_TO_WELCOME_PAGE": "Retour à la page d'accueil",
   "DESCRIPTION": "Gestion de la traduction pour les projets logiciels",
-  "LEARN_MORE": "Apprendre encore plus",
-  "OPEN_GITHUB_REPOSITORY": "Ouvrir le référentiel GitHub",
-  "USE_BUTTONS_BELOW": "Utilisez les boutons ci-dessous pour basculer entre les langues"
+  "GO_TO_ABOUT_US": "Aller à la rubrique \"Qui sommes-nous ?",
+  "LEARN_MORE": "En savoir plus",
+  "OPEN_GITHUB_REPOSITORY": "Ouvrir le dépôt GitHub",
+  "USE_BUTTONS_BELOW": "Utilisez les boutons ci-dessous pour passer d'une langue à l'autre"
 }
