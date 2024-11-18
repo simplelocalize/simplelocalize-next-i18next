@@ -67,7 +67,7 @@ module.exports = nextConfig
 
 💿 Install [SimpleLocalize CLI](https://simplelocalize.io/docs/cli/get-started/)
 ```bash
-curl -s https://get.simplelocalize.io/2.0/install | bash
+curl -s https://get.simplelocalize.io/2.7/install | bash
 ```
 
 🧷 Create configuration file
