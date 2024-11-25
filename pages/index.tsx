@@ -9,7 +9,6 @@ export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
       ...(await serverSideTranslations(locale)),
-      // Will be passed to the page component as props
     },
   };
 }
@@ -37,7 +36,7 @@ const Home: NextPage = () => {
           <div>
             <button onClick={() => changeLanguage("en")}>English</button>
             <button onClick={() => changeLanguage("es")}>Spanish</button>
-            <button onClick={() => changeLanguage("fr_FR")}>French</button>
+            <button onClick={() => changeLanguage("fr")}>French</button>
             <button onClick={() => changeLanguage("pl")}>Polish</button>
           </div>
           <div>

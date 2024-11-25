@@ -31,10 +31,8 @@ const AboutUs: NextPage = () => {
         <p>
           {aboutT("ABOUT_US_DESCRIPTION")}
         </p>
-        <Link href="/">
-          <a className="App-link">
+        <Link href="/" className="App-link">
             {t("BACK_TO_WELCOME_PAGE")}
-          </a>
         </Link>
         <Image src="/logo.svg" className="App-logo" alt="simplelocalize with next-i18next" width={500} height={500} />
       </header>

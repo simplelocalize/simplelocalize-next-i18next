@@ -1,6 +1,9 @@
-#apiKey: YOUR_API_KEY
-downloadFormat: single-language-json
-downloadPath: ./public/locales/{lang}/{ns}.json
-
+apiKey: YOUR_API_KEY
 uploadFormat: single-language-json
-uploadPath: ./public/locales/{lang}/{ns}.json
+uploadLanguageKey: en
+uploadPath: ./public/locales/en/{ns}.json
+
+
+downloadFormat: single-language-json
+downloadLanguageKeys: ['pl', 'fr', 'es']
+downloadPath: ./public/locales/{lang}/{ns}.json
