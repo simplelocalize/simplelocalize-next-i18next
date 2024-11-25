@@ -74,12 +74,15 @@ curl -s https://get.simplelocalize.io/2.7/install | bash
 
 ```yaml
 # 📦 file: ./simplelocalize.yml
-apiKey: YOUR_PROJECT_API_KEY
-downloadFormat: single-language-json
-downloadPath: ./public/locales/{lang}/{ns}.json
-
 uploadFormat: single-language-json
-uploadPath: ./public/locales/{lang}/{ns}.json
+uploadLanguageKey: en
+uploadPath: ./public/locales/en/{ns}.json
+uploadOptions:
+  - REPLACE_TRANSLATION_IF_FOUND
+
+downloadFormat: single-language-json
+downloadLanguageKeys: ['pl', 'fr', 'es']
+downloadPath: ./public/locales/{lang}/{ns}.json
 ```
 
 ⤵️ [Download translations](https://simplelocalize.io/docs/cli/download-translations/) to `./public/locales` directory

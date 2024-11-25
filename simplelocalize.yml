@@ -2,7 +2,8 @@ apiKey: YOUR_API_KEY
 uploadFormat: single-language-json
 uploadLanguageKey: en
 uploadPath: ./public/locales/en/{ns}.json
-
+uploadOptions:
+  - REPLACE_TRANSLATION_IF_FOUND
 
 downloadFormat: single-language-json
 downloadLanguageKeys: ['pl', 'fr', 'es']
